@@ -1,2 +1,8 @@
 
+@import './variables';
+@import './base';
+@import './mixin';
 
+@import './components/navbar';
+
+@import "../node_modules/bootstrap/scss/bootstrap";
