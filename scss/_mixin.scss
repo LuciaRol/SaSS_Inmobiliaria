@@ -1,9 +1,6 @@
-@mixin posicionamenu() {
-    width: 100%;
-    height: 20rem;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+@mixin creagrid( $column: 8, $row: 4, $gap: 1.6rem, $margen:6rem,$colum-size: 16rem){
+    display: grid;
+    grid-template-columns: minmax($margen,2fr) repeat($column,minmax(min-content,$colum-size)) minmax($margen,2fr);
+    grid-template-rows: repeat($row,min-content);
+    grid-row-gap: $gap;
 }

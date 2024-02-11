@@ -1,0 +1,63 @@
+-- Instalar gulp en el equipo (necesario)
+Npm install gulp -g
+
+-- Iniciar gulp
+Npm init
+
+-- Insalar gulp en el proyecto (necesario)
+Npm install gulp --save-dev
+
+-- Crear a mano el fichero gulpfile.js
+
+-- Ejemplo de lo que se poe en el fichero gulp
+const {series, parallel, src, dest} = require ("gulp");
+const concat=require('gulp-concat');
+const pleeease = require('gulp-pleeeease');
+const rename= require('gulp-rename');
+
+function holamundo(cb){
+    console.log("hola mundo");
+    cb();
+}
+
+function adiosmundo(cb){
+    console.log("adios mundo");
+    cb();
+}
+
+function concatena(){
+    return src("css/css?.css")
+        .pipe(concat("style.css"))
+        .pipe(dest("css/"));
+}
+
+function minimizar(){
+    return src("css/css?.css")
+        .pipe(concat("styles.css"))
+        .pipe(pleeease())
+        .pipe(dest('css/'));
+}
+
+function min_rename(){
+    return src("css/css?.css")
+        .pipe(concat("styles.css"))
+        .pipe(pleeease())
+        .pipe(rename({suffix:".min",extname:".css"}))
+        .pipe(dest("css/"));
+}
+
+exports.hola=holamundo;
+exports.adios=adiosmundo;
+exports.default=holamundo;
+exports.serie = series(adiosmundo,holamundo);
+exports.paralelo=parallel(adiosmundo,holamundo);
+exports.concatena=concatenar;
+exports.minimiza=minimizar;
+exports.minimizayrenombra=min_rename;
+
+-- Instalar los módulos de sass para gulp
+npm install gulp-sass --save-dev
+
+-- Compilar y concatenar
+gulp --tasks
+gulp concatena, gulp minimizar, etc. se van ejecutando las funciones
