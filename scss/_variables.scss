@@ -13,7 +13,9 @@ $font-sizes:(
     lg:2.5rem,
     md:2rem,
     sm:1.8rem,
-    xs:1.6rem
+    xs:1.6rem,
+    xxs:1rem,
+    min: 0.7rem
 );
 
 @function size($size){
@@ -26,7 +28,8 @@ $colors: (
     secondary: #403232, 
     tertiary: #D9B7B0, 
     quaternary: #F2F2F2,
-    contrast: #5B74A6
+    contrast: #5B74A6,
+    deep-contrast: #21304c
 );
 
 @function color($color){
@@ -40,6 +43,18 @@ $breakpoints:(
 "lg": 992px,
 "xl": 1200px
 );
+
+//// Animación del menú
+@keyframes underlineAnimation{
+    from{
+      width: 0;
+      margin-left: 0
+  }
+    to{
+      width: 100%;
+      margin-left: 0
+      }
+  }
 
 
 

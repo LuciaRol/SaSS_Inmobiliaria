@@ -8,57 +8,56 @@
   <title>Luxury Live</title>
 </head>
 <body>
-      <header class="header">
+      <header class="header fixed-top">
         <!-- MENÚ DE NAVEGACIÓN -->
         <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
+
+          <div class="navbar-container container-fluid">
             <a class="navbar-brand" href="#">
-              <img src="./assets/img/logo/luxury.png" alt="Logo" width="150" height="90">
-              Luxury Live Real State
+              <img class="navbar-logo" src="./assets/img/logo/luxury.png" alt="Logo" width="150" height="90">
             </a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link border-transparent" aria-current="page" href="#">Inicio</a>
                 <a class="nav-link" href="#">Destinos</a>
                 <a class="nav-link" href="#">Contacto</a>
                 <a class="nav-link" href="#">Login</a>
               </div>
             </div>
+
           </div>
         </nav>
 
         <!-- MENÚ DE BÚSQUEDA -->
-        <section class="first-section-header">
+        <section class="first-section-header search">
           <ul class="nav nav-tabs">
             <li class="nav-item">
               <a class="nav-link" href="#">
                 <img src="./assets/img/icons/icons8-snowy-sunny-day-48.png" alt="">
               </a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#">
                 <img src="./assets/img/icons/icons8-calendario-de-rasgar-las-hojas-48.png" alt="">
               </a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#">
                 <img src="./assets/img/icons/icons8-reloj-26.png" alt="">
               </a>
             </li>
 
             <li class="nav-item">
-              <label for="">Entrada</label>
+              <div class="nav-item-input">
+                <label for="">Entrada</label>
+                <input type="date" class="input input-group">
+              </div>
+              <div class="nav-item-input">
+                <label for="">Salida</label>
               <input type="date" class="input input-group">
-            </li>
-            <li class="nav-item">
-              <label for="">Salida</label>
-              <input type="date" class="input input-group">
-            </li>
-
-            <li>
+              </div>
+            
               <form action="#">
                 <label for="lang">Habitaciones</label>
                 <select name="lenguajes" id="lang" class="form-select" aria-label="Default select example">
@@ -74,16 +73,14 @@
                   <option value="ten">10 rooms</option>
                 </select>
               </form>
-            </li>
-
-            <li class="nav-item">
-              <input type="submit" value="Enviar" />
+        
+              <button class="nav-btn" type="submit">Enviar</button>
             </li>
           </ul>
         </section>
       </header>
 
-      <!-- HERO -->
+      <!-- HERO - CARRUSEL -->
       <main class="main hero">
         <div id="carouselExampleFade" class="carousel slide carousel-fade">
           <div class="carousel-inner">
@@ -109,7 +106,7 @@
       </main>
 
       <!-- CARDS 1 - ICONOS -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="card mb-3" style="max-width: 540px;">
           <div class="row g-0">
             <div class="col-md-4">
@@ -162,10 +159,10 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- CARRUSEL OPINIONES -->
-      <section class="section">
+     <!--  <section class="section">
         <div id="carouselExample" class="carousel slide">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -187,10 +184,10 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-      </section>
+      </section> -->
 
       <!-- CARDS 2 - PROFESIONALES -->
-      <section>
+      <!-- <section>
         <h2 class="h2 subtitle">Los profesionales que quieres tener a tu lado</h2>
         <div class="card" style="width: 18rem;">
           <img src="..." class="card-img-top" alt="...">
@@ -213,15 +210,15 @@
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- GALERÍA -->
-      <section class="section">
+      <!-- <section class="section">
         <h2 class="h2 subtitle">Casas de prestigio en todo el mundo</h2>
-      </section>
+      </section> -->
 
       <!-- CARDS 3 - LUGARES DE INTERÉS -->
-      <section class="section">
+      <!-- <section class="section">
         <h2 class="h2 subtitle">Lugares de interés</h2>
         <div class="card" style="width: 18rem;">
           <img src="..." class="card-img-top" alt="...">
@@ -247,11 +244,11 @@
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <footer class="footer">
+      <!-- <footer class="footer">
 
-      </footer>
+      </footer> -->
 
 
 

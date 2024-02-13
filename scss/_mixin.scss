@@ -1,6 +1,44 @@
+%logo-size{
+    flex-basis: 10%;
+
+}
+
+%shadow-menu{
+    box-shadow: 0px 10px 21px -5px color(secondary);
+}
+
+%border_radius{
+    border: .1rem solid color(tertiary);
+    border-radius: .5rem;
+}
+
+
+
 @mixin creagrid( $column: 8, $row: 4, $gap: 1.6rem, $margen:6rem,$colum-size: 16rem){
     display: grid;
     grid-template-columns: minmax($margen,2fr) repeat($column,minmax(min-content,$colum-size)) minmax($margen,2fr);
     grid-template-rows: repeat($row,min-content);
     grid-row-gap: $gap;
+}
+
+@mixin creabtn{
+    width: 5rem;
+        height: 2rem;
+        align-self: center;
+        margin-right: 1rem;
+        background-color: color(contrast);
+        border: none;
+        color: color(quaternary);
+        text-transform: uppercase;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: size(min);
+        transition-duration: 0.4s;
+        position: relative;
+        @extend %border_radius;
+
+        &:hover{
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2)
+        }
 }

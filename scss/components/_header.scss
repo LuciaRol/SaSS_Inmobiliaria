@@ -1,3 +1,89 @@
-header {
-    background-color: color(secondary);
+.header{
+    z-index: 5;
+}
+
+.navbar {
+    background-color: color(quaternary);
+
+        &-brand{
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-collapse{
+            display: flex;
+            justify-content:flex-end;
+        }
+    
+}
+
+
+/* ENLACES DE LA NAVBAR */
+.navbar-nav .nav-link{
+    width: 7em;
+    position: relative;
+    text-decoration: none;
+    color: color(primary);
+    font-size: size(xxs);
+    transition: color 0.3s ease; // Transición de color al hacer hover
+
+     &::after{
+        content: "";
+        display: block;
+        height: 1px; 
+        width: 0;
+        background-color: color(tertiary); 
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: width 0.3s ease, margin-left 0.3s ease; // Transición de la línea
+    }
+
+     &:hover{
+        color: color(primary); // cambia el color al hacer hover
+        &::after{
+            width: 100%;
+            margin-left: 0; // mueve la línea de izquierda a derecha
+        }
+    }
+  
+}
+
+/* BARRA DE BUSQUEDA */
+.search {
+    background-color: color(tertiary);
+    @extend %shadow-menu;
+
+}
+
+.nav{
+    border-bottom: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+
+    &-item{
+        display: flex;
+        &-input input{
+            padding: 2px;
+            @extend %border_radius;
+        }
+    
+        &:nth-child(2){
+            gap: 0.2rem;
+        }
+        
+    }
+
+    &-link:last-child{
+        align-self: center;
+    }
+
+    &-btn{
+        @include creabtn;
+    
+    }
+
+
 }
