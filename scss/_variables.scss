@@ -22,6 +22,9 @@ $font-sizes:(
     @return map-get($font-sizes, $size);
 }
 
+/* grosores */
+$font-bold: 900;
+
 /* PALETA DE COLORES */
 $colors: (
     primary:#835249, 

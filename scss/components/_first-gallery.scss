@@ -1,0 +1,46 @@
+.firstgallery{
+    width: 100%;
+
+&-div{
+    width: 100%;
+    margin: 0 10px;
+    overflow: hidden;
+    position: relative;
+
+    &::after {
+        content: "";
+        visibility: hidden;
+      }
+
+    &:hover::after {
+        content: "Título cuando se hace hover"; // pasar a un mixin
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: color(tertiary-trans);
+        color: color(secondary);
+        font-weight: $font-bold;
+        font-size: size(xs);
+        padding: 5px 10px;
+        visibility: visible;
+        @extend %border_radius;
+        @extend %shadow-text;
+        border:none;
+      }
+}
+
+&-img{
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    @extend %first-gallery-picture;
+
+    &:hover {
+        transform: scale(1.2);
+      }
+}
+
+
+
+}

@@ -15,6 +15,10 @@
     border-radius: .5rem;
 }
 
+%first-gallery-picture{
+    flex-basis: 25%;
+}
+
 
 /* grid genérico */
 @mixin creagrid( $column: 8, $row: 4, $gap: 1.6rem, $margen:6rem,$colum-size: 16rem){
@@ -50,9 +54,9 @@
 // grid de los card para los iconos
 @mixin grid-gallery{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(25rem, 1.5fr));
+    grid-template-columns: repeat(auto-fill, minmax(33rem, 1.5fr));
     gap: 10px;
-    /// autofil sirve para que las columnas sean responsivas
+    /// autofill sirve para que las columnas sean responsivas
     /// minmax indica el tamaño mínimo y tamanño maximo que pueden tener las columnas
     
 }
@@ -72,4 +76,12 @@
     justify-content: center;
     align-items: center;
     gap: 5px;
+}
+
+/* layout de la primera galeria */
+@mixin firstgallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap:5px;
+      
 }
