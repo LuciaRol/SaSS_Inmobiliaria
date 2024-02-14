@@ -1,10 +1,13 @@
 %logo-size{
     flex-basis: 10%;
-
 }
 
 %shadow-menu{
     box-shadow: 0px 10px 21px -5px color(secondary);
+}
+
+%shadow-text{
+    text-shadow: color(quaternary) 0.1em 0.1em 0.2em;
 }
 
 %border_radius{
@@ -13,7 +16,7 @@
 }
 
 
-
+/* grid genérico */
 @mixin creagrid( $column: 8, $row: 4, $gap: 1.6rem, $margen:6rem,$colum-size: 16rem){
     display: grid;
     grid-template-columns: minmax($margen,2fr) repeat($column,minmax(min-content,$colum-size)) minmax($margen,2fr);
@@ -21,6 +24,7 @@
     grid-row-gap: $gap;
 }
 
+/* aspecto genérico botones */
 @mixin creabtn{
     width: 5rem;
         height: 2rem;
@@ -41,4 +45,31 @@
         &:hover{
             box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2)
         }
+}
+
+// grid de los card para los iconos
+@mixin grid-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1.5fr));
+    gap: 10px;
+    /// autofil sirve para que las columnas sean responsivas
+    /// minmax indica el tamaño mínimo y tamanño maximo que pueden tener las columnas
+    
+}
+
+/* disposicion para dentro de los cards */
+@mixin flex-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* disposición para los artículos de dentro de los cards */
+@mixin card-article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }

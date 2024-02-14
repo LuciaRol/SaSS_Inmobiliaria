@@ -1,0 +1,20 @@
+.gallery{
+    grid-column: 2 / -2;
+    grid-row: 2 / 3;
+    
+
+    /*defino su layout*/
+    @include grid-gallery;
+
+}
+
+.card{
+    border: none;
+    padding: 20px;
+    /*defino su layout*/
+    @include flex-card;
+}
+
+.card-article{
+    @include card-article;
+}

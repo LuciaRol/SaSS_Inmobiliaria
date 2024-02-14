@@ -1,0 +1,14 @@
+.card{
+    &-img{
+
+    }
+
+    &-article{
+        color: color(contrast);
+        
+    }
+
+    &-title{
+        font-size: size(sm);
+    }
+}

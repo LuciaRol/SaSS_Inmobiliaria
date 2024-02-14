@@ -1,0 +1,35 @@
+.hero{
+    background-size: cover;
+}
+
+.carousel{
+
+    &-inner{
+
+    }
+
+    &-item{
+    }
+
+    &-caption{
+        
+        color: color(secondary);
+        background-color: color(tertiary-trans);
+        @extend %shadow-text;
+        
+
+        h2{
+            font-size: size(xxl);
+        }
+        h4{
+            font-size: size(sm);
+        }
+    }
+
+    
+}
+
+.d-block{
+    height: 100vh;
+}
+

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
    * Bootstrap  v5.3.2 (https://getbootstrap.com/)
    * Copyright 2011-2023 The Bootstrap Authors
@@ -9301,10 +9302,17 @@ textarea.form-control-lg {
 .search {
   box-shadow: 0px 10px 21px -5px #403232; }
 
+.carousel-caption {
+  text-shadow: #F2F2F2 0.1em 0.1em 0.2em; }
+
 .nav-item-input input, .nav-btn {
   border: 0.1rem solid #D9B7B0;
   border-radius: .5rem; }
 
+/* grid genérico */
+/* aspecto genérico botones */
+/* disposicion para dentro de los cards */
+/* disposición para los artículos de dentro de los cards */
 * {
   margin: 0;
   padding: 0;
@@ -9313,11 +9321,36 @@ textarea.form-control-lg {
 html {
   font-size: 62.5 html; }
 
-.rejilla {
+.container {
   display: grid;
   grid-template-columns: minmax(6rem, 2fr) repeat(8, minmax(min-content, 16rem)) minmax(6rem, 2fr);
   grid-template-rows: repeat(4, min-content);
-  grid-row-gap: 1.6rem; }
+  grid-row-gap: 1.6rem;
+  /* background-color: color(tertiary); */ }
+
+.gallery {
+  grid-column: 2 / -2;
+  grid-row: 2 / 3;
+  /*defino su layout*/
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1.5fr));
+  gap: 10px; }
+
+.card {
+  border: none;
+  padding: 20px;
+  /*defino su layout*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.card-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px; }
 
 .header {
   z-index: 5; }
@@ -9391,7 +9424,21 @@ html {
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
 
 .hero {
-  height: 150px; }
-
-.carousel-item {
   background-size: cover; }
+
+.carousel-caption {
+  color: #403232;
+  background-color: #d9b7b066; }
+  .carousel-caption h2, .carousel-caption .h2 {
+    font-size: 6rem; }
+  .carousel-caption h4, .carousel-caption .h4 {
+    font-size: 1.8rem; }
+
+.d-block {
+  height: 100vh; }
+
+.card-article {
+  color: #5B74A6; }
+
+.card-title {
+  font-size: 1.8rem; }
