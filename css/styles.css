@@ -9306,6 +9306,9 @@ textarea.form-control-lg {
 .carousel-hero-caption, .firstgallery-uno:hover::after, .firstgallery-dos:hover::after, .firstgallery-tres:hover::after, .firstgallery-cuatro:hover::after {
   text-shadow: #F2F2F2 0.1em 0.1em 0.2em; }
 
+.carousel-article {
+  text-shadow: #403232 0.1em 0.1em 0.2em; }
+
 .nav-item-input input, .nav-btn {
   border: 0.1rem solid #D9B7B0;
   border-radius: .5rem; }
@@ -9329,6 +9332,7 @@ textarea.form-control-lg {
 /* disposición para los artículos de dentro de los cards */
 /* layout de la primera galeria */
 /* animacion para el hover de la primera galeria */
+/* cards pro grid */
 * {
   margin: 0;
   padding: 0;
@@ -9338,6 +9342,12 @@ html {
   font-size: 62.5 html; }
 
 .container {
+  display: grid;
+  grid-template-columns: minmax(6rem, 2fr) repeat(8, minmax(min-content, 16rem)) minmax(6rem, 2fr);
+  grid-template-rows: repeat(6, min-content);
+  grid-row-gap: 1.6rem; }
+
+.container2 {
   display: grid;
   grid-template-columns: minmax(6rem, 2fr) repeat(8, minmax(min-content, 16rem)) minmax(6rem, 2fr);
   grid-template-rows: repeat(6, min-content);
@@ -9377,6 +9387,16 @@ html {
 .carousel-opinions {
   grid-column: 1 / -1;
   grid-row: 4 / 5; }
+
+.title-pro {
+  grid-column: 5 / -5;
+  grid-row: 2 / 3; }
+
+.testimonials {
+  grid-column: 4 / -4;
+  grid-row: 3 / 4;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 0.5fr)); }
 
 .header {
   z-index: 5; }
@@ -9546,4 +9566,39 @@ html {
 
 .carousel-comentario {
   width: 100%;
-  height: 30vh; }
+  height: 25vh; }
+
+.carousel-article {
+  color: #F2F2F2 !important;
+  top: 15%; }
+  .carousel-article h5, .carousel-article .h5 {
+    font-size: 1.6rem;
+    text-transform: uppercase; }
+  .carousel-article p {
+    font-size: 1rem; }
+
+.testimonials {
+  display: flex;
+  justify-content: space-evenly; }
+  .testimonials__card {
+    width: 275px;
+    height: 400px;
+    position: relative; }
+    .testimonials__card:hover .testimonials__card--back {
+      transform: rotateY(360deg); }
+    .testimonials__card:hover .testimonials__card--front {
+      transform: rotateY(180deg); }
+    .testimonials__card--front, .testimonials__card--back {
+      padding: 5px;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all 1s linear;
+      backface-visibility: hidden; }
+    .testimonials__card--front {
+      background-color: #835249; }
+    .testimonials__card--back {
+      transform: rotateY(180deg);
+      background-color: #403232; }

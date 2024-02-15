@@ -12,11 +12,28 @@
     
     &-comentario{
         width: 100%;
-        height: 30vh;
+        height: 25vh;
+    }
+
+    &-article{
+        color: color(quaternary) !important;
+        top: 15%;
+        @extend %shadow-text-dark;
+
+        & h5{
+            font-size: size(xs);
+            text-transform: uppercase;
+            
+        }
+
+        & p{
+            font-size: size(xxs);
+        }
     }
 
 
 }
+
 
 
 

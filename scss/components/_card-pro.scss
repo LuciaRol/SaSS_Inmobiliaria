@@ -1,0 +1,52 @@
+.pro-title{
+}
+
+.testimonials{
+    display: flex;
+    justify-content:space-evenly;
+
+    &__card{
+        width: 275px;
+        height:400px;
+        position:relative;
+
+        &:hover &--back{
+            transform: rotateY(360deg);
+        }
+
+        &:hover &--front{
+            transform: rotateY(180deg);
+        }
+
+        &--front,&--back{ 
+            padding:5px;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top:0;
+            left:0;
+            transition: all 1s linear;
+            backface-visibility: hidden;
+            
+        }
+
+        &--front{
+            background-color: color(primary);
+        }
+
+        &--back{
+            transform:rotateY(180deg);
+            background-color: color(secondary);
+        }
+    }
+
+    
+    
+}
+
+
+
+
+
+
+

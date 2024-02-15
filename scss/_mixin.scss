@@ -10,6 +10,10 @@
     text-shadow: color(quaternary) 0.1em 0.1em 0.2em;
 }
 
+%shadow-text-dark{
+    text-shadow: color(secondary) 0.1em 0.1em 0.2em;
+}
+
 %border_radius{
     border: .1rem solid color(tertiary);
     border-radius: .5rem;
@@ -112,4 +116,10 @@
     visibility: visible;
     @extend %shadow-text;
     border:none;
+}
+
+/* cards pro grid */
+@mixin cardpro{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 0.5fr));
 }
