@@ -9373,10 +9373,19 @@ html {
   grid-column: 1 / -1;
   grid-row: 4 / 5; }
 
-.d-md-block {
-  color: black;
-  background-color: gray;
-  z-index: 99; }
+.carousel-item .d-block {
+  background-color: gray; }
+
+.bg-primary {
+  display: block;
+  width: 100%;
+  height: 30vh;
+  background-color: gray; }
+
+.btn-round {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px; }
 
 .header {
   z-index: 5; }
@@ -9460,7 +9469,7 @@ html {
   .carousel-hero-caption h4, .carousel-hero-caption .h4 {
     font-size: 1.8rem; }
 
-.carousel-hero .d-block {
+.imagen {
   height: 100vh; }
 
 .card-article {
