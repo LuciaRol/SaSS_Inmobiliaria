@@ -9,6 +9,7 @@
         width: 275px;
         height:400px;
         position:relative;
+        cursor: pointer;
 
         &:hover &--back{
             transform: rotateY(360deg);

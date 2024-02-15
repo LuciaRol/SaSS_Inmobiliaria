@@ -9583,7 +9583,8 @@ html {
   .testimonials__card {
     width: 275px;
     height: 400px;
-    position: relative; }
+    position: relative;
+    cursor: pointer; }
     .testimonials__card:hover .testimonials__card--back {
       transform: rotateY(360deg); }
     .testimonials__card:hover .testimonials__card--front {
