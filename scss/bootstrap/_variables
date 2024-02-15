@@ -1,0 +1,16 @@
+/* ejemplo de rodrigo */
+
+$primary: color(primary);
+$secondary-600:color(secondary-600);
+$secondary: color(secondary);
+
+$custom_theme:(
+    "secondary-600" : $secondary-600,
+);
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+);
+
+$theme-colors: map-merge($theme-colors, $custom_theme);

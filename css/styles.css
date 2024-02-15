@@ -9317,6 +9317,12 @@ textarea.form-control-lg {
 .firstgallery-img {
   flex-basis: 25%; }
 
+.btn-round {
+  border-radius: 50%;
+  width: 15px !important;
+  height: 15px !important;
+  background-color: transparent !important; }
+
 /* grid genérico */
 /* aspecto genérico botones */
 /* disposicion para dentro de los cards */
@@ -9335,8 +9341,7 @@ html {
   display: grid;
   grid-template-columns: minmax(6rem, 2fr) repeat(8, minmax(min-content, 16rem)) minmax(6rem, 2fr);
   grid-template-rows: repeat(6, min-content);
-  grid-row-gap: 1.6rem;
-  /* background-color: color(tertiary); */ }
+  grid-row-gap: 1.6rem; }
 
 .gallery-card {
   grid-column: 2 / -2;
@@ -9366,26 +9371,12 @@ html {
   grid-column: 2 / -2;
   grid-row: 3 / 4;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 0.5fr));
   gap: 5px; }
 
 .carousel-opinions {
   grid-column: 1 / -1;
   grid-row: 4 / 5; }
-
-.carousel-item .d-block {
-  background-color: gray; }
-
-.bg-primary {
-  display: block;
-  width: 100%;
-  height: 30vh;
-  background-color: gray; }
-
-.btn-round {
-  border-radius: 50%;
-  width: 30px;
-  height: 30px; }
 
 .header {
   z-index: 5; }
@@ -9545,3 +9536,14 @@ html {
     transition: transform 0.3s ease; }
     .firstgallery-img:hover {
       transform: scale(1.2); }
+
+.btn-round {
+  border: 0.15rem solid #F2F2F2 !important; }
+
+.carousel-item {
+  background-color: #5B74A6;
+  color: #F2F2F2; }
+
+.carousel-comentario {
+  width: 100%;
+  height: 30vh; }

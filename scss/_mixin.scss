@@ -24,6 +24,13 @@
     flex-basis: 25%;
 }
 
+%btn-round{
+    border-radius: 50%;
+    width: 15px !important;
+    height: 15px !important;
+    background-color: transparent !important;
+}
+
 
 /* grid genérico */
 @mixin creagrid( $column: 8, $row: 6, $gap: 1.6rem, $margen:6rem,$colum-size: 16rem){
@@ -86,7 +93,7 @@
 /* layout de la primera galeria */
 @mixin firstgallery{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 0.5fr));
     gap:5px;
       
 }

@@ -1,0 +1,22 @@
+.btn-round{
+    border: 0.15rem solid color(quaternary) !important;
+    @extend %btn-round;
+    
+}
+
+.carousel{
+    &-item{
+        background-color: color(contrast);
+        color: color(quaternary);
+    }
+    
+    &-comentario{
+        width: 100%;
+        height: 30vh;
+    }
+
+
+}
+
+
+
