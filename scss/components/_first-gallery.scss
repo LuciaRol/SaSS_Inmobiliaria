@@ -11,27 +11,30 @@
         content: "";
         visibility: hidden;
       }
+}
 
-    &:hover::after {
-        content: "Título cuando se hace hover"; // pasar a un mixin
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: color(tertiary-trans);
-        color: color(secondary);
-        font-weight: $font-bold;
-        font-size: size(xs);
-        padding: 5px 10px;
-        visibility: visible;
-        @extend %border_radius;
-        @extend %shadow-text;
-        border:none;
-      }
+&-uno:hover::after {
+  content: "Montaña";
+  @include firstgallery-hover;
+}
+
+&-dos:hover::after {
+  content: "Playa";
+  @include firstgallery-hover;
+}
+
+&-tres:hover::after {
+  content: "Ciudad";
+  @include firstgallery-hover;
+}
+
+&-cuatro:hover::after {
+  content: "Ensueño";
+  @include firstgallery-hover;
 }
 
 &-img{
-    width: 100%;
+    @extend %img-size;
     object-fit: cover;
     transition: transform 0.3s ease;
     @extend %first-gallery-picture;
@@ -39,6 +42,7 @@
     &:hover {
         transform: scale(1.2);
       }
+    
 }
 
 

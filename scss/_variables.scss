@@ -33,7 +33,8 @@ $colors: (
     tertiary-trans: #d9b7b066,
     quaternary: #F2F2F2,
     contrast: #5B74A6,
-    deep-contrast: #21304c
+    deep-contrast: #21304c,
+    btn-shadow: rgba(0, 0, 0, 0.2)
 );
 
 @function color($color){

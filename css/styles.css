@@ -9303,12 +9303,16 @@ textarea.form-control-lg {
 .search {
   box-shadow: 0px 10px 21px -5px #403232; }
 
-.carousel-caption, .firstgallery-div:hover::after {
+.carousel-caption, .firstgallery-uno:hover::after, .firstgallery-dos:hover::after, .firstgallery-tres:hover::after, .firstgallery-cuatro:hover::after {
   text-shadow: #F2F2F2 0.1em 0.1em 0.2em; }
 
-.nav-item-input input, .nav-btn, .firstgallery-div:hover::after {
+.nav-item-input input, .nav-btn, .firstgallery-uno:hover::after, .firstgallery-dos:hover::after, .firstgallery-tres:hover::after, .firstgallery-cuatro:hover::after {
   border: 0.1rem solid #D9B7B0;
   border-radius: .5rem; }
+
+.firstgallery-img {
+  width: 100%;
+  height: 250px; }
 
 .firstgallery-img {
   flex-basis: 25%; }
@@ -9318,6 +9322,7 @@ textarea.form-control-lg {
 /* disposicion para dentro de los cards */
 /* disposición para los artículos de dentro de los cards */
 /* layout de la primera galeria */
+/* animacion para el hover de la primera galeria */
 * {
   margin: 0;
   padding: 0;
@@ -9465,21 +9470,59 @@ html {
     .firstgallery-div::after {
       content: "";
       visibility: hidden; }
-    .firstgallery-div:hover::after {
-      content: "Título cuando se hace hover";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: #d9b7b066;
-      color: #403232;
-      font-weight: 900;
-      font-size: 1.6rem;
-      padding: 5px 10px;
-      visibility: visible;
-      border: none; }
+  .firstgallery-uno:hover::after {
+    content: "Montaña";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #d9b7b066;
+    color: #403232;
+    font-weight: 900;
+    font-size: 1.8rem;
+    padding: 5px 10px;
+    visibility: visible;
+    border: none; }
+  .firstgallery-dos:hover::after {
+    content: "Playa";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #d9b7b066;
+    color: #403232;
+    font-weight: 900;
+    font-size: 1.8rem;
+    padding: 5px 10px;
+    visibility: visible;
+    border: none; }
+  .firstgallery-tres:hover::after {
+    content: "Ciudad";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #d9b7b066;
+    color: #403232;
+    font-weight: 900;
+    font-size: 1.8rem;
+    padding: 5px 10px;
+    visibility: visible;
+    border: none; }
+  .firstgallery-cuatro:hover::after {
+    content: "Ensueño";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #d9b7b066;
+    color: #403232;
+    font-weight: 900;
+    font-size: 1.8rem;
+    padding: 5px 10px;
+    visibility: visible;
+    border: none; }
   .firstgallery-img {
-    width: 100%;
     object-fit: cover;
     transition: transform 0.3s ease; }
     .firstgallery-img:hover {
