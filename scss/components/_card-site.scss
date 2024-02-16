@@ -3,13 +3,16 @@
     &-card{
         width: 75%;
         max-width: 600px;
-        height: 100%;
+        height: 110%;
         background-color: #fff;
         border: 1px solid #ccc;
         padding: 0px;
+
         display: flex;
         flex-direction: column;
         align-items: center;
+
+
         text-align:start;
         margin: 20px;
 
@@ -20,23 +23,31 @@
         & div img{
             max-width: 100%;
             max-height: 100%; 
+            height: 200px;
             object-fit: cover;
             
         }
 
         & button{
-            background-color: gray;
-            color: #fff;
+            width: 100%;
+            background-color: color(tertiary);
+            color: color(secondary);
             font-size: larger;
-            padding: 20px 20px;
+            padding: 10px 20px;
             border: none;
             cursor: pointer;
-            width: 100%;
+            bottom: 5px;
+            
 
             
             &:hover {
                 background-color: color(secondary);
+                color: color(quaternary);
             }
         }
     }
+}
+
+.texto{
+    min-height: 46.5%;
 }
