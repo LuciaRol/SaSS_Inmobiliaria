@@ -9333,6 +9333,7 @@ textarea.form-control-lg {
 /* layout de la primera galeria */
 /* animacion para el hover de la primera galeria */
 /* cards pro grid */
+/* cards site grid */
 * {
   margin: 0;
   padding: 0;
@@ -9350,7 +9351,7 @@ html {
 .container2 {
   display: grid;
   grid-template-columns: minmax(6rem, 2fr) repeat(8, minmax(min-content, 16rem)) minmax(6rem, 2fr);
-  grid-template-rows: repeat(6, min-content);
+  grid-template-rows: repeat(8, min-content);
   grid-row-gap: 1.6rem; }
 
 .gallery-card {
@@ -9388,15 +9389,23 @@ html {
   grid-column: 1 / -1;
   grid-row: 4 / 5; }
 
-.title-pro {
-  grid-column: 5 / -5;
-  grid-row: 2 / 3; }
-
+/* .title-pro{
+    grid-column: 5 / -5;
+    grid-row: 2 / 3;
+} */
 .testimonials {
   grid-column: 4 / -4;
   grid-row: 3 / 4;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(25rem, 0.5fr)); }
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 0.5fr));
+  gap: 10px; }
+
+.site {
+  grid-column: 2 / -2;
+  grid-row: 5 / 6;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 0.5fr));
+  gap: 10px; }
 
 .header {
   z-index: 5; }
@@ -9566,7 +9575,7 @@ html {
 
 .carousel-comentario {
   width: 100%;
-  height: 25vh; }
+  height: 30vh; }
 
 .carousel-article {
   color: #F2F2F2 !important;
@@ -9598,8 +9607,40 @@ html {
       left: 0;
       transition: all 1s linear;
       backface-visibility: hidden; }
-    .testimonials__card--front {
-      background-color: #835249; }
+    .testimonials__card--front img {
+      width: 275px;
+      height: 400px;
+      object-fit: cover; }
     .testimonials__card--back {
       transform: rotateY(180deg);
+      background-color: #F2F2F2;
+      color: #403232; }
+
+.site-card {
+  width: 75%;
+  max-width: 600px;
+  height: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+  margin: 20px; }
+  .site-card:hover {
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5); }
+  .site-card div img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; }
+  .site-card button {
+    background-color: gray;
+    color: #fff;
+    font-size: larger;
+    padding: 20px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%; }
+    .site-card button:hover {
       background-color: #403232; }

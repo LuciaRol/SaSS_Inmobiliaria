@@ -32,12 +32,19 @@
         }
 
         &--front{
-            background-color: color(primary);
+
+            & img{
+                width: 275px;
+                height:400px;
+                object-fit: cover;
+
+            }
         }
 
         &--back{
             transform:rotateY(180deg);
-            background-color: color(secondary);
+            background-color: color(quaternary);
+            color: color(secondary);
         }
     }
 

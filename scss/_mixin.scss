@@ -44,6 +44,13 @@
     grid-row-gap: $gap;
 }
 
+@mixin creagrid2( $column: 8, $row: 8, $gap: 1.6rem, $margen:6rem,$colum-size: 16rem){
+    display: grid;
+    grid-template-columns: minmax($margen,2fr) repeat($column,minmax(min-content,$colum-size)) minmax($margen,2fr);
+    grid-template-rows: repeat($row,min-content);
+    grid-row-gap: $gap;
+}
+
 /* aspecto genérico botones */
 @mixin creabtn{
     width: 5rem;
@@ -119,7 +126,15 @@
 }
 
 /* cards pro grid */
-@mixin cardpro{
+@mixin cardgrid{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(25rem, 0.5fr));
+    gap: 10px;
+}
+
+/* cards site grid */
+@mixin card-site{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 0.5fr));
+    gap: 10px;
 }
