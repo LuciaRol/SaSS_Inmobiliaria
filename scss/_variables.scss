@@ -3,9 +3,11 @@
 
 /// Fuente principal: Raleway
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
 
 ///Declaracion de variables
 $font-family: 'Raleway', sans-serif;
+$font-title: 'Cinzel Decorative', 'serif';
 
 $font-sizes:(
     xxl:6rem,
@@ -61,5 +63,26 @@ $breakpoints:(
       }
   }
 
+  /* Definimos la animación para la sombra */
+@keyframes shadowAnimation {
+    from {
+        box-shadow: 0 0 0 color(tertiary); /* Comenzamos sin sombra */
+    }
+    to {
+        box-shadow: 0 8px 10px color(secondary); /* Terminamos con la sombra deseada */
+    }
+}
+
+/* Definimos la animación para el hover del botón */
+@keyframes buttonHoverAnimation {
+    from {
+        background-color: color(contrast); /* Color de fondo inicial */
+        color: color(secondary); /* Color de texto inicial */
+    }
+    to {
+        background-color: color(deep-contrast); /* Color de fondo al hacer hover */
+        color: color(quaternary); /* Color de texto al hacer hover */
+    }
+}
 
 

@@ -5,6 +5,7 @@
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    */
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap");
 :root,
 [data-bs-theme="light"] {
   --bs-blue: #0d6efd;
@@ -9300,6 +9301,28 @@ textarea.form-control-lg {
     width: 100%;
     margin-left: 0; } }
 
+/* Definimos la animación para la sombra */
+@keyframes shadowAnimation {
+  from {
+    box-shadow: 0 0 0 #D9B7B0;
+    /* Comenzamos sin sombra */ }
+  to {
+    box-shadow: 0 8px 10px #403232;
+    /* Terminamos con la sombra deseada */ } }
+
+/* Definimos la animación para el hover del botón */
+@keyframes buttonHoverAnimation {
+  from {
+    background-color: #5B74A6;
+    /* Color de fondo inicial */
+    color: #403232;
+    /* Color de texto inicial */ }
+  to {
+    background-color: #21304c;
+    /* Color de fondo al hacer hover */
+    color: #F2F2F2;
+    /* Color de texto al hacer hover */ } }
+
 .search {
   box-shadow: 0px 10px 21px -5px #403232; }
 
@@ -9493,7 +9516,7 @@ html {
   height: 100vh; }
 
 .card-article {
-  color: #5B74A6; }
+  color: #403232; }
 
 .card-title {
   font-size: 1.8rem; }
@@ -9620,9 +9643,9 @@ html {
   width: 75%;
   max-width: 600px;
   height: 110%;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  padding: 0px;
+  background-color: transparent;
+  border: 1px solid #21304c;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9640,40 +9663,20 @@ html {
     object-fit: cover; }
   .site-card button {
     width: 100%;
-    background-color: #D9B7B0;
+    background-color: #5B74A6;
     /* Reemplazar con el color real */
-    color: #403232;
+    color: #F2F2F2;
     /* Reemplazar con el color real */
+    border: none;
     font-size: larger;
     padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    bottom: 5px; }
+    cursor: pointer; }
     .site-card button:hover {
       animation: buttonHoverAnimation 0.3s forwards;
-      /* Animación de hover para el botón */ }
+      /* Animación de hover para el botón */
+      border: none; }
 
 .texto {
-  min-height: 46.5%; }
-
-/* Definimos la animación para la sombra */
-@keyframes shadowAnimation {
-  from {
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-    /* Comenzamos sin sombra */ }
-  to {
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
-    /* Terminamos con la sombra deseada */ } }
-
-/* Definimos la animación para el hover del botón */
-@keyframes buttonHoverAnimation {
-  from {
-    background-color: #D9B7B0;
-    /* Color de fondo inicial */
-    color: #403232;
-    /* Color de texto inicial */ }
-  to {
-    background-color: #403232;
-    /* Color de fondo al hacer hover */
-    color: #F2F2F2;
-    /* Color de texto al hacer hover */ } }
+  min-height: 46.5%;
+  margin-left: 5px;
+  margin-right: 5px; }
