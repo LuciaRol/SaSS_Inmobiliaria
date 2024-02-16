@@ -9627,9 +9627,12 @@ html {
   flex-direction: column;
   align-items: center;
   text-align: start;
-  margin: 20px; }
+  margin: 20px;
+  transition: box-shadow 0.3s ease;
+  /* Transición suave para la sombra */ }
   .site-card:hover {
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5); }
+    animation: shadowAnimation 0.3s forwards;
+    /* Animación de sombra al hacer hover */ }
   .site-card div img {
     max-width: 100%;
     max-height: 100%;
@@ -9638,15 +9641,39 @@ html {
   .site-card button {
     width: 100%;
     background-color: #D9B7B0;
+    /* Reemplazar con el color real */
     color: #403232;
+    /* Reemplazar con el color real */
     font-size: larger;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
     bottom: 5px; }
     .site-card button:hover {
-      background-color: #403232;
-      color: #F2F2F2; }
+      animation: buttonHoverAnimation 0.3s forwards;
+      /* Animación de hover para el botón */ }
 
 .texto {
   min-height: 46.5%; }
+
+/* Definimos la animación para la sombra */
+@keyframes shadowAnimation {
+  from {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    /* Comenzamos sin sombra */ }
+  to {
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+    /* Terminamos con la sombra deseada */ } }
+
+/* Definimos la animación para el hover del botón */
+@keyframes buttonHoverAnimation {
+  from {
+    background-color: #D9B7B0;
+    /* Color de fondo inicial */
+    color: #403232;
+    /* Color de texto inicial */ }
+  to {
+    background-color: #403232;
+    /* Color de fondo al hacer hover */
+    color: #F2F2F2;
+    /* Color de texto al hacer hover */ } }
