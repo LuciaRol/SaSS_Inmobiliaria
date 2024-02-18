@@ -126,7 +126,7 @@
 }
 
 /* cards pro grid */
-@mixin cardgrid{
+@mixin card-pro{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(25rem, 0.5fr));
     gap: 10px;
@@ -135,6 +135,6 @@
 /* cards site grid */
 @mixin card-site{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 0.5fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    gap: 5px;
 }
