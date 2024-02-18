@@ -9811,3 +9811,13 @@ h2, .h2 {
       grid-template-columns: repeat(1, 1fr);
       grid-gap: 30px;
       padding: 35px 0px; } }
+
+.categoria {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 10px;
+  margin-top: 10rem; }
+  .categoria1 {
+    background-color: blueviolet; }
+  .categoria2 {
+    background-color: lightgreen; }
