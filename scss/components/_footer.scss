@@ -39,17 +39,9 @@
 
             .red-social{
                 a{
-                    display: inline-block;
-                    text-decoration: none;
-                    width: 45px;
-                    height: 45px;
-                    line-height: 45px;
-                    color: color(quaternary);
-                    margin-right: 10px;
                     background-color: color(primary);
-                    text-align: center;
+                    @include crea-icono-fa;
                     transition: all 300ms ease;
-
                     &:hover{
                         color: color(tertiary);
                     }

@@ -59,24 +59,24 @@
 /* aspecto genérico botones */
 @mixin creabtn{
     width: 5rem;
-        height: 2rem;
-        align-self: center;
-        margin-right: 1rem;
-        background-color: color(contrast);
-        border: none;
-        color: color(quaternary);
-        text-transform: uppercase;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: size(min);
-        transition-duration: 0.4s;
-        position: relative;
-        @extend %border_radius;
+    height: 2rem;
+    align-self: center;
+    margin-right: 1rem;
+    background-color: color(contrast);
+    border: none;
+    color: color(quaternary);
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: size(min);
+    transition-duration: 0.4s;
+    position: relative;
+    @extend %border_radius;
 
-        &:hover{
-            box-shadow: 0 8px 16px 0 color(btn-shadow);
-        }
+    &:hover{
+        box-shadow: 0 8px 16px 0 color(btn-shadow);
+    }
 }
 
 // grid de los card para los iconos
@@ -142,4 +142,15 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
     gap: 5px;
+}
+
+@mixin crea-icono-fa{
+    color: color(quaternary);
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+    text-align: center;
 }
