@@ -9337,7 +9337,7 @@ textarea.form-control-lg {
   border: 0.1rem solid #D9B7B0;
   border-radius: .5rem; }
 
-.gallery-container .gallery__item .gallery__img {
+.gallery-container .gallery__item, .gallery-container .gallery__item .gallery__img {
   border: none;
   border-radius: .5rem; }
 
@@ -9483,7 +9483,7 @@ html {
 
 /* BARRA DE BUSQUEDA */
 .search {
-  background-color: #D9B7B0; }
+  background-color: #835249e9; }
 
 .nav {
   border-bottom: none;
@@ -9651,7 +9651,7 @@ html {
       object-fit: cover; }
     .testimonials__card--back {
       transform: rotateY(180deg);
-      background-color: #F2F2F2;
+      background-color: #D9B7B0;
       color: #403232; }
 
 .site {
@@ -9717,7 +9717,7 @@ h2, .h2 {
     .gallery-container .gallery__item .gallery__title {
       position: absolute;
       bottom: 0;
-      color: white;
+      color: #F2F2F2;
       background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5));
       margin: 0;
       width: 100%; }
@@ -9754,7 +9754,7 @@ h2, .h2 {
     transition: transform 0.3s ease, box-shadow 0.3s ease; }
     .gallery-container .gallery__item:hover .gallery__img:hover {
       transform: scale(1.02);
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 20px var(secondary);
       transition: transform 0.3s ease; }
 
 .pie-pagina {
@@ -9816,7 +9816,8 @@ h2, .h2 {
   display: grid;
   grid-template-columns: 40% 60%;
   gap: 10px;
-  margin-top: 10rem; }
+  margin-top: 10rem;
+  margin-bottom: 2rem; }
   .categoria1 {
     background-color: blueviolet; }
   .categoria2 {
