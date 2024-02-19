@@ -1,60 +1,65 @@
-.categoria{
-    width: 90%;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+.list{
     margin-top: 10rem;
-    margin-bottom: 2rem;
-    margin-left: 5rem;
-    border-bottom: 1px solid color(contrast);
 
-    &1{
-        .carousel{
-            &-inner{
-                .carousel-item{
-                    &-img{
-                        width: 90%;
-                        max-width: 700px;
-                        height: 350px;
-                        object-fit: cover;
+    .categoria{
+        width: 90%;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 2rem;
+        margin-left: 5rem;
+        border-bottom: 1px solid color(contrast);
+    
+        &1{
+            .carousel{
+                &-inner{
+                    .carousel-item{
+                        &-img{
+                            width: 90%;
+                            max-width: 700px;
+                            height: 350px;
+                            object-fit: cover;
+                        }
+    
                     }
-
                 }
+    
             }
-
         }
-    }
-
-    &2{
-        background-color: lightgreen;
-        .card{
-            &-title-icon{
-                a{
-                    background-color: color(deep-contrast);
-                    border-radius: 50px;
-                    @include crea-icono-fa;
-
+    
+        &2{
+            background-color: lightgreen;
+            .card{
+                &-title-icon{
+                    a{
+                        background-color: color(deep-contrast);
+                        border-radius: 50px;
+                        @include crea-icono-fa;
+    
+                    }
                 }
-            }
-            &-icon{
-                a{
-                    background-color: color(primary);
-                    border-radius: 50px;
-                    @include crea-icono-fa;
+                &-icon{
+                    a{
+                        background-color: color(primary);
+                        border-radius: 50px;
+                        @include crea-icono-fa;
+                        
+    
+                        
+                    }
+    
+                   
+                    .btn{
+                        display: flex;
+                        margin-left: auto;
+                        @include creabtn;
+                    }
                     
-
-                    
                 }
-
-               
-                .btn{
-                    display: flex;
-                    @include creabtn;
-                }
-                
             }
         }
     }
 }
+
