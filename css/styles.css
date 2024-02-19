@@ -9855,7 +9855,6 @@ h2, .h2 {
         text-align: center; }
       .list .categoria2 .card-icon .btn {
         display: flex;
-        margin-left: auto;
         width: 5rem;
         height: 2rem;
         align-self: center;
@@ -9872,3 +9871,18 @@ h2, .h2 {
         position: relative; }
         .list .categoria2 .card-icon .btn:hover {
           box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+
+.detail-container {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 150px; }
+  .detail-container .detail__item:first-child {
+    background-color: rebeccapurple;
+    grid-column-start: span 4; }
+  .detail-container .detail__item:nth-child(2) {
+    background-color: lightgreen;
+    grid-column-start: span 3; }
+  .detail-container .detail__item:last-child {
+    background-color: lightcoral;
+    grid-column-start: span 1; }
