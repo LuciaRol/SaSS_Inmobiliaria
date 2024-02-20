@@ -45,6 +45,11 @@
     
 }
 
-
+.card-icon{
+  .btn{
+    @include creabtn;
+    
+  }
+}
 
 }

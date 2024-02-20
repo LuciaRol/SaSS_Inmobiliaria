@@ -9333,7 +9333,7 @@ textarea.form-control-lg {
 .carousel-article {
   text-shadow: #403232 0.1em 0.1em 0.2em; }
 
-.nav-item-input input, .nav-btn, .list .categoria2 .card-icon .btn {
+.nav-item-input input, .nav-btn, .firstgallery .card-icon .btn, .list .categoria2 .card-icon .btn {
   border: 0.1rem solid #D9B7B0;
   border-radius: .5rem; }
 
@@ -9603,6 +9603,23 @@ html {
     transition: transform 0.3s ease; }
     .firstgallery-img:hover {
       transform: scale(1.2); }
+  .firstgallery .card-icon .btn {
+    width: 5rem;
+    height: 2rem;
+    align-self: center;
+    margin-right: 1rem;
+    background-color: #5B74A6;
+    border: none;
+    color: #F2F2F2;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.7rem;
+    transition-duration: 0.4s;
+    position: relative; }
+    .firstgallery .card-icon .btn:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
 
 .btn-round {
   border: 0.15rem solid #F2F2F2 !important; }
