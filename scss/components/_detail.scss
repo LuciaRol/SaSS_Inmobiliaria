@@ -23,8 +23,6 @@
         }
 
         .carousel{
-            
-
             .carousel-inner{
                 .carousel-item{
                     & img{
@@ -37,17 +35,23 @@
                 
             }
         }
+        
 
-        /* .card-img{
+        .card-img{
             display: flex;
             justify-content: space-between;
+            
 
-        } */
+            a{
+                background-color: color(contrast);
+                border-radius: 50%;
+                @include crea-icono-fa;
+            }
 
-        
-
-        
-
+            .img-icon2 a{
+                background-color: color(primary);
+            }
+        }
         
     }
 }

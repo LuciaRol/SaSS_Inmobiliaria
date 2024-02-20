@@ -9814,6 +9814,8 @@ h2, .h2 {
 
 .list {
   margin-top: 10rem; }
+  .list-title {
+    margin-left: 5rem; }
   .list .categoria {
     width: 90%;
     display: grid;
@@ -9829,48 +9831,46 @@ h2, .h2 {
       max-width: 700px;
       height: 350px;
       object-fit: cover; }
-    .list .categoria2 {
-      background-color: lightgreen; }
-      .list .categoria2 .card-title-icon a {
-        background-color: #21304c;
-        border-radius: 50px;
-        color: #F2F2F2;
-        display: inline-block;
-        text-decoration: none;
-        width: 45px;
-        height: 45px;
-        line-height: 45px;
-        margin-right: 10px;
-        text-align: center; }
-      .list .categoria2 .card-icon a {
-        background-color: #835249;
-        border-radius: 50px;
-        color: #F2F2F2;
-        display: inline-block;
-        text-decoration: none;
-        width: 45px;
-        height: 45px;
-        line-height: 45px;
-        margin-right: 10px;
-        text-align: center; }
-      .list .categoria2 .card-icon .btn {
-        display: flex;
-        width: 5rem;
-        height: 2rem;
-        align-self: center;
-        margin-right: 1rem;
-        background-color: #5B74A6;
-        border: none;
-        color: #F2F2F2;
-        text-transform: uppercase;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 0.7rem;
-        transition-duration: 0.4s;
-        position: relative; }
-        .list .categoria2 .card-icon .btn:hover {
-          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+    .list .categoria2 .card-title-icon a {
+      background-color: #21304c;
+      border-radius: 50px;
+      color: #F2F2F2;
+      display: inline-block;
+      text-decoration: none;
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      margin-right: 10px;
+      text-align: center; }
+    .list .categoria2 .card-icon a {
+      background-color: #835249;
+      border-radius: 50px;
+      color: #F2F2F2;
+      display: inline-block;
+      text-decoration: none;
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      margin-right: 10px;
+      text-align: center; }
+    .list .categoria2 .card-icon .btn {
+      display: flex;
+      width: 5rem;
+      height: 2rem;
+      align-self: center;
+      margin-right: 1rem;
+      background-color: #5B74A6;
+      border: none;
+      color: #F2F2F2;
+      text-transform: uppercase;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 0.7rem;
+      transition-duration: 0.4s;
+      position: relative; }
+      .list .categoria2 .card-icon .btn:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
 
 .detail-container {
   margin-top: 8rem;
@@ -9878,22 +9878,32 @@ h2, .h2 {
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
   padding: 0 50px; }
-  .detail-container .detail__item {
-    /* .card-img{
-            display: flex;
-            justify-content: space-between;
-
-        } */ }
-    .detail-container .detail__item:first-child {
-      background-color: rebeccapurple;
-      grid-column-start: span 4; }
-    .detail-container .detail__item:nth-child(2) {
-      background-color: lightgreen;
-      grid-column-start: span 3; }
-    .detail-container .detail__item:last-child {
-      background-color: lightcoral;
-      grid-column-start: span 1; }
-    .detail-container .detail__item .carousel .carousel-inner .carousel-item img {
-      object-fit: cover;
-      width: 100%;
-      height: 50vh; }
+  .detail-container .detail__item:first-child {
+    background-color: rebeccapurple;
+    grid-column-start: span 4; }
+  .detail-container .detail__item:nth-child(2) {
+    background-color: lightgreen;
+    grid-column-start: span 3; }
+  .detail-container .detail__item:last-child {
+    background-color: lightcoral;
+    grid-column-start: span 1; }
+  .detail-container .detail__item .carousel .carousel-inner .carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 50vh; }
+  .detail-container .detail__item .card-img {
+    display: flex;
+    justify-content: space-between; }
+    .detail-container .detail__item .card-img a {
+      background-color: #5B74A6;
+      border-radius: 50%;
+      color: #F2F2F2;
+      display: inline-block;
+      text-decoration: none;
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      margin-right: 10px;
+      text-align: center; }
+    .detail-container .detail__item .card-img .img-icon2 a {
+      background-color: #835249; }
