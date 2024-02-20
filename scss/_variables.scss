@@ -1,16 +1,23 @@
-//// Proyecto: Landing inmobiliaria
+//// Proyecto: Pagina web para una inmobiliaria de lujo
 //// @author luciarl
 
-/// Fuente principal: Raleway
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+/// Importación de las fuentes desde Google Fonts.
+/// Se usaran las tres siguientes: ´Cinzel Decorative´, ´Raleway´ y ´Open Sans´
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-///Declaracion de variables
+///Declaracion de variables para las fuentes.
+/// $fon-family: 'Raleway' - Se usara para los textos en general.
+/// $font-title: 'Cinzel Decorative' - Se usara para el titulo en la cabecera.
+/// $font-footer: 'Open Sans' - Se usara para el texto del footer.
 $font-family: 'Raleway', sans-serif;
 $font-title: 'Cinzel Decorative', serif;
 $font-footer: 'Open Sans', sans-serif;
 
+/// @group font-sizes
+/// Grupo de variables para determinar el tamaño del texto.
+/// Se determinan los valores para xxl, xl, lg, mg, sm, xs, xxs y min.
 $font-sizes:(
     xxl:6rem,
     xl:3rem,
@@ -22,6 +29,11 @@ $font-sizes:(
     min: 0.7rem
 );
 
+/// Esta función realiza una operación matemática.
+/// @param {number} a – Primer número
+/// @param {number} b – Segundo número
+/// @return {number} – Resultado de la operación
+///
 @function size($size){
     @return map-get($font-sizes, $size);
 }
