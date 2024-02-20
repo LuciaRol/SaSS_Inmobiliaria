@@ -14,6 +14,13 @@
             display: flex;
             justify-content:flex-end;
         }
+
+        .logo-title{
+            font-family: $font-title;
+            font-weight: 600;
+            color: color(secondary);
+            text-transform: uppercase;
+        }
     
 }
 

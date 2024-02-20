@@ -9456,6 +9456,11 @@ html {
   .navbar-collapse {
     display: flex;
     justify-content: flex-end; }
+  .navbar .logo-title {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 600;
+    color: #403232;
+    text-transform: uppercase; }
 
 /* ENLACES DE LA NAVBAR */
 .navbar-nav .nav-link {
@@ -9793,7 +9798,8 @@ h2, .h2 {
       justify-content: center;
       align-items: center; }
       .pie-pagina .grupo1 .box figure img {
-        width: 250px; }
+        width: 180px;
+        height: 200px; }
     .pie-pagina .grupo1 .box h2, .pie-pagina .grupo1 .box .h2 {
       color: #F2F2F2;
       margin-bottom: 25px;
