@@ -1,38 +1,47 @@
-%logo-size{
-    flex-basis: 10%;
-}
-
+/// Placeholder selector %shadow-menu para determinar la sombra de debajo del header
+/// @example
+/// .search {
+///     background-color: color(primary-trans);
+///        @extend %shadow-menu;
+/// }
 %shadow-menu{
     box-shadow: 0px 10px 21px -5px color(secondary);
 }
 
+/// Placeholder selector %shadow-text para establecer una sombra de color claro bajo el texto.
 %shadow-text{
     text-shadow: color(quaternary) 0.1em 0.1em 0.2em;
 }
 
+/// Placeholder selector %shadow-text-dark para establecer una sombra de color oscuro bajo el texto.
 %shadow-text-dark{
     text-shadow: color(secondary) 0.1em 0.1em 0.2em;
 }
 
+/// Placeholder selector %border_radius para establecer border redondeados con color.
 %border_radius{
     border: .1rem solid color(tertiary);
     border-radius: .5rem;
 }
 
+/// Placeholder selector %border_radius_none para establecer border redondeados sin color.
 %border_radius_none{
     border: none;
     border-radius: .5rem;
 }
 
+/// Placeholder selector %img-size para establecer el tamaño de las imagenes.
 %img-size{
     width: 100%;
     height: 250px;
 }
 
+/// Placeholder selector %first-gallery-picture para establecer el tamaño de las imagenes de la galeria de categorias.
 %first-gallery-picture{
     flex-basis: 25%;
 }
 
+/// Placeholder selector %btn-round para establecer una forma redondeada a los botones del carrusel.
 %btn-round{
     border-radius: 50%;
     width: 15px !important;
@@ -42,6 +51,16 @@
 
 
 /* grid genérico */
+/// Asigna un layout a un contenedor.
+/// @param {lenght} $column - longitud de la columna.
+/// @param {lenght} $row - longitud de la fila.
+/// @param {lenght} $gap - longitud del salto.
+/// @param {lenght} $margin - longitud del margen.
+/// @param {size} $column-size - tamaño de la columna.
+/// @example
+/// .container{
+///     @include creagrid;
+/// }
 @mixin creagrid( $column: 8, $row: 6, $gap: 1.6rem, $margen:6rem,$colum-size: 16rem){
     display: grid;
     grid-template-columns: minmax($margen,2fr) repeat($column,minmax(min-content,$colum-size)) minmax($margen,2fr);
@@ -49,6 +68,12 @@
     grid-row-gap: $gap;
 }
 
+/// Asigna un layout a un contenedor.
+/// @param {lenght} $column - longitud de la columna.
+/// @param {lenght} $row - longitud de la fila.
+/// @param {lenght} $gap - longitud del salto.
+/// @param {lenght} $margin - longitud del margen.
+/// @param {size} $column-size - tamaño de la columna.
 @mixin creagrid2( $column: 8, $row: 10, $gap: 1.6rem, $margen:6rem,$colum-size: 16rem){
     display: grid;
     grid-template-columns: minmax($margen,2fr) repeat($column,minmax(min-content,$colum-size)) minmax($margen,2fr);
@@ -57,6 +82,7 @@
 }
 
 /* aspecto genérico botones */
+/// Asigna un aspecto determinado y uniforme a todos los botones de la web, incluido su hover.
 @mixin creabtn{
     width: 5rem;
     height: 2rem;
@@ -79,17 +105,17 @@
     }
 }
 
-// grid de los card para los iconos
+/// Layout para las cards con iconos.
+/// autofill sirve para que las columnas sean responsivas.
+/// minmax indica el tamaño mínimo y tamanño maximo que pueden tener las columnas.
 @mixin grid-gallery{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(33rem, 1.5fr));
     gap: 10px;
-    /// autofill sirve para que las columnas sean responsivas
-    /// minmax indica el tamaño mínimo y tamanño maximo que pueden tener las columnas
-    
 }
 
 /* disposicion para dentro de los cards */
+/// Layout para el interior de las cards con iconos.
 @mixin flex-card{
     display: flex;
     flex-direction: row;
@@ -98,6 +124,7 @@
 }
 
 /* disposición para los artículos de dentro de los cards */
+/// Layout interior para los articulos de las cards con iconos.
 @mixin card-article{
     display: flex;
     flex-direction: column;
@@ -107,6 +134,7 @@
 }
 
 /* layout de la primera galeria */
+/// Layout de la galeria con categorias.
 @mixin firstgallery{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15rem, 0.5fr));
@@ -115,6 +143,7 @@
 }
 
 /* animacion para el hover de la primera galeria */
+/// Hover de la galeria por categorias.
 @mixin firstgallery-hover{
     position: absolute;
     top: 50%;
@@ -131,6 +160,7 @@
 }
 
 /* cards pro grid */
+/// Layout para las card ´somos profesionales´
 @mixin card-pro{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(25rem, 0.5fr));
@@ -138,12 +168,14 @@
 }
 
 /* cards site grid */
+/// Layout para las card ´lugares de interes´
 @mixin card-site{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
     gap: 5px;
 }
 
+/// Determina el aspecto de los iconos importados desde fontawesome.
 @mixin crea-icono-fa{
     color: color(quaternary);
     display: inline-block;

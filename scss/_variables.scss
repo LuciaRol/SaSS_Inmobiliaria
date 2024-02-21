@@ -30,7 +30,7 @@ $font-sizes:(
 );
 
 /// Función size que saca un tamaño determinado del @group $font-sizes a traves de un parámetro $size
-/// @param {size} – Tamaño de la fuente
+/// @param {size} $size – Tamaño de la fuente
 /// @return {size} – Resultado de la funcion.
 @function size($size){
     @return map-get($font-sizes, $size);
@@ -60,7 +60,7 @@ $colors: (
 );
 
 /// Función color que saca un tamaño determinado del @group $colors a traves de un parámetro $color
-/// @param {color} – Color.
+/// @param {color} $color – Color.
 /// @return {color} – Resultado de la funcion.
 @function color($color){
     @return map-get($colors, $color);
