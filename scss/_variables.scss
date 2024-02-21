@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-///Declaracion de variables para las fuentes.
+/// Declaracion de variables para las fuentes.
 /// $fon-family: 'Raleway' - Se usara para los textos en general.
 /// $font-title: 'Cinzel Decorative' - Se usara para el titulo en la cabecera.
 /// $font-footer: 'Open Sans' - Se usara para el texto del footer.
@@ -29,19 +29,23 @@ $font-sizes:(
     min: 0.7rem
 );
 
-/// Esta función realiza una operación matemática.
-/// @param {number} a – Primer número
-/// @param {number} b – Segundo número
-/// @return {number} – Resultado de la operación
+/// Función size que saca un tamaño determinado del @group $font-sizes a traves de un parámetro $size
+/// @param {size} – Tamaño de la fuente
+/// @return {size} – Resultado de la funcion.
 ///
 @function size($size){
     @return map-get($font-sizes, $size);
 }
 
-/* grosores */
+/// Variable para el grosor de la fuente
+/// $fon-bold: 900 - Se usara para resaltar la fuente.
 $font-bold: 900;
 
 /* PALETA DE COLORES */
+/// @group colors
+/// Grupo de variables para determinar un color de fondo o texto.
+/// Se determinan los valores primary, primary-trans, secondary, tertiary, tertiary-trans, quaternary. contrast, deep-contrast y btn-shadow
+/// 
 $colors: (
     primary:#835249, 
     primary-trans: #835249e9, 
