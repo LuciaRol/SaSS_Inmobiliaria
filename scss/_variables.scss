@@ -32,7 +32,6 @@ $font-sizes:(
 /// Función size que saca un tamaño determinado del @group $font-sizes a traves de un parámetro $size
 /// @param {size} – Tamaño de la fuente
 /// @return {size} – Resultado de la funcion.
-///
 @function size($size){
     @return map-get($font-sizes, $size);
 }
@@ -44,8 +43,10 @@ $font-bold: 900;
 /* PALETA DE COLORES */
 /// @group colors
 /// Grupo de variables para determinar un color de fondo o texto.
-/// Se determinan los valores primary, primary-trans, secondary, tertiary, tertiary-trans, quaternary. contrast, deep-contrast y btn-shadow
-/// 
+/// Se determinan los valores primary, primary-trans, secondary, tertiary, tertiary-trans, quaternary. contrast, deep-contrast y btn-shadow.
+/// Los colores se proporcionaran en su variante hexadecimal.
+/// Los colores que llevan el apellido -trans son versiones con transparencia de sus predecesores.
+/// Los colores con el prefijo deep- son la version oscura de su predecesor.
 $colors: (
     primary:#835249, 
     primary-trans: #835249e9, 
@@ -55,14 +56,19 @@ $colors: (
     quaternary: #F2F2F2,
     contrast: #5B74A6,
     deep-contrast: #21304c,
-    btn-shadow: rgba(0, 0, 0, 0.2)
+    btn-shadow: #00000033
 );
 
+/// Función color que saca un tamaño determinado del @group $colors a traves de un parámetro $color
+/// @param {color} – Color.
+/// @return {color} – Resultado de la funcion.
 @function color($color){
     @return map-get($colors, $color);
 }
 
-/// Puntos de ruptura
+/// @group breakpoints
+/// Grupo de variables para determinar los puntos de ruptura de las media query.
+/// Se determinan los valores para sm, md, lg, xl.
 $breakpoints:(
 "sm": 576,
 "md": 768px,
@@ -70,7 +76,9 @@ $breakpoints:(
 "xl": 1200px
 );
 
-//// Animación del menú
+/// Animación para la el menú de navegación del header.
+/// Consiste en una barrita que se desliza de izquierda a derecha, debajo del enlace cuando se hace 
+/// hover en el mismo.
 @keyframes underlineAnimation{
     from{
       width: 0;
@@ -83,24 +91,34 @@ $breakpoints:(
   }
 
   /* Definimos la animación para la sombra */
+  /// Animación de aparición de sombra al hacer hover en cards.
+  /// Consiste en una sombre que parte de cero y se va intensificando con suavidad.
 @keyframes shadowAnimation {
     from {
-        box-shadow: 0 0 0 color(tertiary); /* Comenzamos sin sombra */
+        box-shadow: 0 0 0 color(tertiary); 
     }
     to {
-        box-shadow: 0 8px 10px color(secondary); /* Terminamos con la sombra deseada */
+        box-shadow: 0 8px 10px color(secondary); 
     }
 }
 
 /* Definimos la animación para el hover del botón */
+/// Animación para hacer un hover sueve de cambio de color al pulsar sobre un boton.
+/// Consiste en partir desde un color de fondo y un color de texto inicial y transicionar
+/// hacia un fondo más oscuro y un texto más claro.
+/// @example 
+/// button:hover {
+///     animation: buttonHoverAnimation 0.3s forwards;
+///     border: none;
+///}
 @keyframes buttonHoverAnimation {
     from {
-        background-color: color(contrast); /* Color de fondo inicial */
-        color: color(secondary); /* Color de texto inicial */
+        background-color: color(contrast); 
+        color: color(secondary); 
     }
     to {
-        background-color: color(deep-contrast); /* Color de fondo al hacer hover */
-        color: color(quaternary); /* Color de texto al hacer hover */
+        background-color: color(deep-contrast); 
+        color: color(quaternary); 
     }
 }
 
