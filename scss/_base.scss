@@ -1,7 +1,7 @@
 /// Normalización del documenyo html
 /// Los margenes, el padding se restablecen a 0.
-/// Como fuente predeterminada se usara aquella que en las variables establecimos
-/// para tal efecto: $font-family.
+/// No se pueden restablecer a 0 ´*::after´ y ´*::before´ porque si no, los iconos de fontawesome no funcionan bien.
+/// Como fuente predeterminada se usara aquella que en las variables establecimos para tal efecto: $font-family.
 *{
     margin: 0;
     padding: 0;
