@@ -1,9 +1,14 @@
+/// Importacion de los estilos de Bootsrap 5.3
+/// Han de ir los primeros para que se puedan sustituir sus estilos con los propios.
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+/// Importacion de los ficheros parciales de variables, mixin y base (normalizacion).
+/// Han de estar en el orden susodicho.
 @import './variables';
 @import './mixin';
 @import './base';
 
+/// Importacion de los layouts.
 @import './layout/card-icono';
 @import './layout/categories';
 @import './layout/reviews';
@@ -11,6 +16,7 @@
 @import './layout/card-site';
 @import './layout/gallery';
 
+/// Importacion de los componentes
 @import './components/header';
 @import './components/hero';
 @import './components/card-icono';
