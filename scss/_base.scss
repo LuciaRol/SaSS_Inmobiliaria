@@ -1,16 +1,24 @@
-*{
+/// Normalización del documenyo html
+/// Los margenes, el padding se restablecen a 0.
+/// Como fuente predeterminada se usara aquella que en las variables establecimos
+/// para tal efecto: $font-family.
+*, *::after, *::before{
     margin: 0;
     padding: 0;
     font-family: $font-family;
 }
+
+/// Se estable un tamaño de fuente del 62,5%
 html{
     font-size: 62.5&;
 }
 
+/// Se establece un layout para el primer container del landing.
 .container{
     @include creagrid;
 }
 
+/// Se establece un layout para el segundo container del landing.
 .container2{
     @include creagrid2;
 }
