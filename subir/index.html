@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/jpg" href="./assets/img/logo/favicon.ico"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="assets/css/styles.min.css">
+  <title>Peacock Real State</title>
+</head>
+<body>
+
+  <!-- HEADER -->
+      <header class="header fixed-top">
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav class="navbar navbar-expand-lg">
+
+          <div class="navbar-container container-fluid">
+            <a class="navbar-brand" href="./index.html">
+              <img class="navbar-logo" src="./assets/img/logo/peacock.png" alt="Logo" width="45" height="50">
+            </a>
+            <h6 class="logo-title">Peacock Real State</h3>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link border-transparent" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link" href="./categoria.html">Destinos</a>
+                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="#">Login</a>
+              </div>
+            </div>
+
+          </div>
+        </nav>
+
+        <!-- MENÚ DE BÚSQUEDA -->
+        <section class="first-section-header search">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="./assets/img/icons/icons8-snowy-sunny-day-48.png" alt="">
+              </a>
+              <a class="nav-link" href="#">
+                <img src="./assets/img/icons/icons8-calendario-de-rasgar-las-hojas-48.png" alt="">
+              </a>
+              <a class="nav-link" href="#">
+                <img src="./assets/img/icons/icons8-reloj-26.png" alt="">
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <div class="nav-item-input">
+                <label for="">Entrada</label>
+                <input type="date" class="input input-group">
+              </div>
+              <div class="nav-item-input">
+                <label for="">Salida</label>
+              <input type="date" class="input input-group">
+              </div>
+            
+              <form action="#">
+                <label for="lang">Habitaciones</label>
+                <select name="lenguajes" id="lang" class="form-select" aria-label="Default select example">
+                  <option value="one">1 room</option>
+                  <option value="two">2 rooms</option>
+                  <option value="three">3 rooms</option>
+                  <option value="four">4 rooms</option>
+                  <option value="five">5 rooms</option>
+                  <option value="six">6 rooms</option>
+                  <option value="seven">7 rooms</option>
+                  <option value="eight">8 rooms</option>
+                  <option value="nine">9 rooms</option>
+                  <option value="ten">10 rooms</option>
+                </select>
+              </form>
+        
+              <button class="nav-btn" type="submit">Enviar</button>
+            </li>
+          </ul>
+        </section>
+      </header>
+
+      <!-- HERO - CARRUSEL -->
+      <main class="main">
+        <section class="hero">
+          <div id="carouselExampleDark" class="carousel carousel-hero slide carousel-fade">
+            <div class="carousel-indicators carousel-hero-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active carousel-btn" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" class="carousel-btn" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" class="carousel-btn" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner carousel-hero-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./assets/img/carousel/villa1.jpg" class="d-block imagen w-100" alt="...">
+                <div class="carousel-caption carousel-hero-caption d-none d-md-block">
+                  <h2>Peacock Real State</h2>
+                  <h4>Desde 1987</h4>
+                </div>
+              </div>
+              <div class="carousel-item carousel-hero-inner" data-bs-interval="2000">
+                <img src="./assets/img/carousel/villa2.jpg" class="d-block imagen w-100" alt="...">
+                <div class="carousel-caption carousel-hero-caption d-none d-md-block">
+                  <h2 class="h2">Peacock Real State</h2>
+                  <h4>Desde 1987</h4>
+                </div>
+              </div>
+              <div class="carousel-item carousel-hero-inner">
+                <img src="./assets/img/carousel/villa3.webp" class="d-block imagen w-100" alt="...">
+                <div class="carousel-caption carousel-hero-caption d-none d-md-block">
+                  <h2>Peacock Real State</h2>
+                  <h4>Desde 1987</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- CARDS DE SERVICIOS (CON ICONOS) -->
+      <div class="container">
+        <section class="gallery-card">
+          <div class="card">
+              <div class="card-img"><img src="./assets/img/icons/user.png" alt=""></div>
+              <article class="card-article">
+                  <h1 class="card-title">Servicio personalizado</h1>
+                  <p>Nos ajustamos a sus necesidades. Disponemos de servicio de limpieza y catering.</p>
+              </article>
+          </div>
+          <div class="card">
+              <div class="card-img"><img src="./assets/img/icons/coche.png" alt=""></div>
+              <article class="card-article">
+                  <h1 class="card-title">Alquiler de vehículos</h1>
+                  <p>Ponemos a su disposición todo tipo de vehículos a través de nuestro partner <i>Luxury Cars</i>.</p>
+              </article>
+          </div>
+          <div class="card">
+              <div class="card-img"><img src="./assets/img/icons/diamante.png" alt=""></div>
+              <article class="card-article">
+                  <h1 class="card-title">Programa de fidelidad</h1>
+                  <p>Consiga puntos por alquilar con nosotros. Nuevos premios y destinos todos los meses.</p>
+              </article>
+          </div>
+          <div class="card">
+              <div class="card-img"><img src="./assets/img/icons/atencioncliente.png" alt=""></div>
+              <article class="card-article">
+                  <h1 class="card-title">Atención al cliente 24 h</h1>
+                  <p>Nuestros profesionales están para atenderle las 24 horas del día los 365 días del año.</p>
+              </article>
+          </div>
+        </section>
+
+        <!-- PRIMERA GALERÍA -CATEGORÍAS -->
+        <section class="firstgallery">
+          <div class="firstgallery-div firstgallery-uno"><a href=""><img src="./assets/img/galeria1/mountain.jpg" alt="" class="firstgallery-img"></a></div>
+          <div class="firstgallery-div firstgallery-dos"><a href=""><img src="./assets/img/galeria1/beach.jpg" alt="" class="firstgallery-img"></a></div>
+          <div class="firstgallery-div firstgallery-tres"><a href=""><img src="./assets/img/galeria1/city.jpg" alt="" class="firstgallery-img"></a></div>
+          <div class="firstgallery-div firstgallery-cuatro"><a href=""><img src="./assets/img/galeria1/dream.jpg" alt="" class="firstgallery-img"></a></div>
+        </section>
+      </div>
+      
+      
+        <!-- CARRUSEL DE OPINIONES -->
+        <section class="carousel-opinions">
+          <div id="carouselExample" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active btn-round" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" class="btn-round" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" class="btn-round" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <div class="d-block w-100 carousel-comentario"></div>
+                <div class="carousel-caption carousel-article d-none d-md-block">
+                  <h5>Aitor Tilla</h5>
+                  <p>
+                    <q>
+                      Increíble experiencia con esta inmobiliaria. Desde el primer contacto, su equipo demostró profesionalidad y dedicación 
+                      para encontrar nuestra casa ideal de vacaciones. Su conocimiento del mercado y su disposición para responder a nuestras preguntas y 
+                      preocupaciones nos dieron confianza en cada paso del proceso. ¡Altamente recomendada!
+                    </q>
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="d-block w-100 carousel-comentario"></div>
+                <div class="carousel-caption carousel-article d-none d-md-block">
+                  <h5>Elsa Capuntas</h5>
+                  <p>
+                    <q>
+                      Quería expresar mi gratitud hacia esta inmobiliaria por su excelente servicio. Nos ayudaron a alquilar nuestra propiedad de manera rápida 
+                      y sin problemas. Desde la evaluación inicial hasta el cierre, su equipo estuvo presente para guiarnos y brindarnos apoyo. 
+                      Su enfoque personalizado y atención a los detalles marcaron la diferencia. 
+                      ¡Gracias por hacer que todo el proceso fuera tan sencillo y exitoso!
+                    </q>
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-block w-100 carousel-comentario"></div>
+                <div class="carousel-caption carousel-article d-none d-md-block">
+                  <h5>Aquiles Bailo</h5>
+                  <p>
+                    <q>
+                      No podríamos estar más contentos con nuestra experiencia. 
+                      Nos ayudaron a encontrar el apartamento perfecto, que se adaptaba a nuestras necesidades y presupuesto. 
+                      Su equipo fue extremadamente receptivo y se aseguró de que estuviéramos siempre informados. 
+                      Valoramos enormemente su ética de trabajo. Los recomendaremos a amigos y familiares en el futuro.
+                    </q>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+
+        <div class="container2">
+          
+          <!-- CARDS QUE SE VOLTEAN -->
+          <div class="title-pro"><h2>Somos profesionales</h2></div>
+          <section class="testimonials">
+            <div class="testimonials__card">
+                <div class="testimonials__card--front">
+                    <div><img src="./assets/img/cardpro/inmo1.jpg" alt=""></div>
+                </div>
+                
+                <div class="testimonials__card--back">
+                    <h3 class="testimonials__card--back__title">Te ayudamos a encontrar la casa perfecta.</h3>
+                    <p class="testimonials__card--back__content">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                      Maiores facere doloribus quae, impedit asperiores et rerum ducimus. 
+                      Iure alias expedita dolor quasi quae quidem libero necessitatibus placeat deleniti ut? 
+                      Laboriosam excepturi ut voluptatum ad, doloribus aliquam at culpa natus quam, assumenda, 
+                      molestias unde omnis porro.
+                    </p>
+                </div>
+              </div>
+
+              <div class="testimonials__card">
+                <div class="testimonials__card--front">
+                  <div><img src="./assets/img/cardpro/inmo3.jpg" alt=""></div>
+                </div>
+                <div class="testimonials__card--back">
+                    <h3 class="testimonials__card--back__title">Te asesoramos durante todo el proceso de compra o alquiler.</h3>
+                    <p class="testimonials__card--back__content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Aspernatur, eveniet voluptates? Dolor itaque vero laboriosam nobis velit modi eaque quibusdam nulla, 
+                        consequuntur nam perspiciatis quaerat, corrupti earum consectetur autem mollitia provident!
+                    </p>
+                </div>
+              </div>
+
+              <div class="testimonials__card">
+                <div class="testimonials__card--front">
+                  <div><img src="./assets/img/cardpro/inmo2.jpg" alt=""></div>
+                </div>
+                <div class="testimonials__card--back">
+                    <h3 class="testimonials__card--back__title">¿Dudas de si es el momento? Con nosotros siempre lo es.</h3>
+                    <p class="testimonials__card--back__content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Molestias aspernatur est suscipit voluptatibus sunt consequuntur hic accusantium, 
+                        voluptate sed aliquid et ratione nemo quaerat tempore fugiat? 
+                        Quia quidem fugiat culpa nam, animi at quos quaerat illum voluptatem, expedita rerum doloribus!
+                    </p>
+                </div>
+              </div>
+          </section>
+
+          <!-- GALERÍA -->
+          <section class="gallery">
+            <h2>Casas de prestigio en todo el mundo</h2>
+
+            <div class="gallery-container">
+                <div class="gallery__item">
+                    <img src="./assets/img/galeria2/baggins.jpg" alt="" class="gallery__img">
+                    <h2 class="gallery__title">Descubre</h2>
+                </div>
+                <div class="gallery__item">
+                    <img src="./assets/img/galeria2/beach.jpg" alt="" class="gallery__img">
+                    <h2 class="gallery__title">Experimenta</h2>
+                </div>
+                <div class="gallery__item">
+                    <img src="./assets/img/galeria2/cortijo.jpg" alt="" class="gallery__img">
+                    <h2 class="gallery__title">Halla</h2>
+                </div>
+                <div class="gallery__item">
+                    <img src="./assets/img/galeria2/city.jpg" alt="" class="gallery__img">
+                    <h2 class="gallery__title">Encuentra</h2>
+                </div>
+                <div class="gallery__item">
+                    <img src="./assets/img/galeria2/villa3.jpg" alt="" class="gallery__img">
+                    <h2 class="gallery__title">Investiga</h2>
+                </div>
+                <div class="gallery__item">
+                    <img src="./assets/img/galeria2/dream.jpg" alt="" class="gallery__img">
+                    <h2 class="gallery__title">Vive</h2>
+                </div>
+                <div class="gallery__item">
+                    <img src="./assets/img/galeria2/nieve.jpg" alt="" class="gallery__img">
+                    <h2 class="gallery__title">Comparte</h2>
+                </div>
+                <div class="gallery__item">
+                    <img src="./assets/img/galeria2/villa1.jpg" alt="" class="gallery__img">
+                    <h2 class="gallery__title">Prueba</h2>
+                </div>
+                <div class="gallery__item">
+                    <img src="./assets/img/galeria2/villa2.jpg" alt="" class="gallery__img">
+                    <h2 class="gallery__title">Siente</h2>
+                </div>
+            </div>
+          </section>
+       
+          <!-- CARDS DE LUGARES DE INTERÉS -->
+          <div class="title-site"><h2>Lugares de interés</h2></div>
+          <section class="site">
+              
+              <div class="site-card">
+                <div><img src="./assets/img/cardsite/baggins.jpg" alt=""></div>
+                <div class="texto">
+                    <h2>La Comarca</h2>
+                    <p>Det er en kendsgerning, at man bliver distraheret af læsbart.</p>
+                </div>
+                <button>Ver más</button>
+              </div>
+        
+              <div class="site-card">
+                  <div><img src="./assets/img/cardsite/yurta.jpg" alt=""></div>
+                  <div class="texto">
+                      <h2>Mongolia</h2>
+                      <p>
+                          Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. 
+                  </div>
+                  <button>Ver más</button>
+              </div>
+          
+              <div class="site-card">
+                  <div><img src="./assets/img/cardsite/cortijo.jpg" alt=""></div>
+                  <div class="texto">
+                      <h2>Andalucía</h2>
+                      <p>
+                          Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. 
+                  </div>
+                  <button>Ver más</button>
+              </div>
+        
+              <div class="site-card">
+                  <div><img src="./assets/img/cardsite/nieve.jpg" alt=""></div>
+                  <div class="texto">
+                      <h2>Svalbard</h2>
+                      <p>
+                          Lorem Ipsum er ganske enkelt fyldtekst fra.
+                  </div>
+                  <button>Ver más</button>
+              </div>
+          </section>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="pie-pagina">
+          <div class="grupo1">
+              <div class="box">
+                  <figure>
+                      <a href="./index.html">
+                          <img src="./assets/img/logo/peacock.png" alt="logo">
+                      </a>
+                  </figure>
+              </div>
+              <div class="box">
+                  <h2>SOBRE NOSOTROS</h2>
+                  <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, vero.</P>
+                  <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, culpa.</P>
+              </div>
+              <div class="box">
+                  <h2>SÍGUENOS</h2>
+                  <div class="red-social">
+                      <a href="#" class="fa fa-facebook"></a>
+                      <a href="#" class="fa fa-instagram"></a>
+                      <a href="#" class="fa fa-twitter"></a>
+                      <a href="#" class="fa fa-youtube"></a>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="grupo2">
+              <small>&copy; 2024 Lucía Rodríguez López</small>
+          </div>
+      </footer>
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  </body>
+</html>
